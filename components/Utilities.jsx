@@ -11,7 +11,7 @@ function Utilities() {
             <BsArrowLeft className="text-[#EEEEF2] opacity-40" size={50} />
             <BsArrowRight className="text-[#940FF7]" size={50} />
           </div>
-          <div className="bg-[#4B365D] px-6 rounded-lg mt-6 h-[53vh] nm:h-[17vh] nm:flex nm:flex-row nm:justify-around nm:items-center nm:space-x-32">
+          <div className="bg-[#4B365D] px-6 rounded-lg mt-6 h-[60vh] nm:h-[17vh] nm:flex nm:flex-row nm:justify-around nm:items-center nm:space-x-32">
             <div className="flex py-10 flex-col space-y-4 ">
               <h1 className="text-white text-[18px] font-nesatho text-center font-bold">
                 01. CURSOS CREATIVOS PARA
