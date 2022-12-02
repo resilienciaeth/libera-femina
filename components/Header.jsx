@@ -5,7 +5,7 @@ import images from '../public/assets';
 
 function Header() {
   return (
-    <div className="bg-libera-1 flex justify-center items-start h-[90vh]">
+    <div className="bg-libera-1 flex justify-center items-start h-[110vh]">
       <div className="flex flex-col mt-20 justify-center items-center">
         <p className=" font-kanit font-bold text-[15px] text-libera-2">KA' LARRAZA & MALICIA</p>
         <h1 className="text-center text-[58px] nm:text-[100px] font-bold leading-[50px] font-nesatho nm:leading-[120px] text-white">

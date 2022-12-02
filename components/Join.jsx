@@ -5,7 +5,7 @@ function Join() {
     <div className=" px-4 mt-20 nm:flex nm:flex-col nm:justify-center ">
       <div>
         <div className=" nm:h-auto space-y-4 nm:space-y-0 nm:space-x-10 mt-10 nm:flex nm:flex-row">
-          <div className="bg-[#5B397B] h-[34vh] nm:h-[30vh] nm:w-[33%] rounded-xl flex items-center justify-start flex-col ">
+          <div className="bg-[#5B397B] h-[40vh] nm:h-[30vh] nm:w-[33%] rounded-xl flex items-center justify-start flex-col ">
             <h1 className="text-[18px] nm:text-[18px] px-2 mt-6 text-white text-center font-nesatho font-bold leading-[30px]">
               UNA COMUNIDAD PRIVADA QUE TE EMPODERA A CONSTRUIR TU VERSIÓN MÁS PURA Y CUMPLIR TUS SUEÑOS.
             </h1>
