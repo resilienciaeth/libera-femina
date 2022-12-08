@@ -7,6 +7,9 @@ import ka from './ka.png';
 import malicia from './malicia.png';
 import card from './Cards.png';
 import logo from './logo.png';
+import header1 from './headerbg.png';
+import art1 from './art1.png';
+import roadmap from './roadmap.png';
 
 export default {
   libera1,
@@ -16,7 +19,9 @@ export default {
   malicia,
   card,
   logo,
-
+  header1,
+  art1,
   menu,
+  roadmap,
 
 };

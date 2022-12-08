@@ -5,9 +5,9 @@ import images from '../public/assets';
 
 function Mision() {
   return (
-    <div className="mb-20 mt-20 nm:h-[100vh] bg-libera-1 px-10">
+    <div className="mb-20 mt-20 nm:hidden nm:h-[100vh] bg-libera-1 px-10">
       <div className="nm:mt-20">
-        <h1 className="text-white text-center uppercase text-[20px] font-nesatho md:text-[70px] font-bold">
+        <h1 className="text-white text-center uppercase text-[20px] font-nesatho font-bold">
           Mision y
           {' '}
           <span className="text-[#9A2AFC]">beneficios</span>

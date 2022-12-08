@@ -7,6 +7,7 @@ import Join from '../components/Join';
 import Cards from '../components/Cards';
 import Creators from '../components/Creators';
 import Mision from '../components/Mision';
+import Roadmap from '../components/Roadmap';
 
 const index = () => (
   <div>
@@ -15,6 +16,7 @@ const index = () => (
     <Mision />
     <Utilities />
     <Join />
+    <Roadmap />
     <Cards />
     <Creators />
   </div>

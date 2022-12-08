@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'card-2': "url('/public/assets/Cards.png')",
+        'header-2': "url('/assets/headerbg.png')",
 
       },
       colors: {
@@ -134,7 +135,7 @@ module.exports = {
     },
     screens: {
       lg: { min: '1800px' },
-      nm: { min: '1300px' },
+      nm: { min: '1100px' },
       md: { min: '750px' },
       sm: { min: '600px' },
       xs: { min: '450px' },

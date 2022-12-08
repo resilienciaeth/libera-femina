@@ -14,41 +14,31 @@ function Navbar() {
   };
   return (
     <nav>
-      <div className="flex font-creato justify-between items-center nm:h-24 h-14  px-4 ">
-        <div>
+      <div className="flex font-creato justify-between items-center nm:h-24 h-14 px-4 ">
+        <div className="flex md:hidden">
           <Image src={images.logo} width={66} height={12} />
         </div>
-        <ul className="hidden text-white font-bold font-nesatho nm:flex nm:mr-10 space-x-[4rem] text-[15px]">
-          <div onClick={() => window.open('https://www.debook.app')} className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:bg-zinc-900 duration-[600ms]">
-            <AiOutlineAppstoreAdd size={30} />
-            <li className="p-2 ">App</li>
+        <div className="hidden md:flex ml-10">
+          <Image src={images.logo} width={100} height={30} />
+        </div>
+        <ul className="hidden text-white font-bold font-nesatho md:flex nm:mr-10 space-x-[4rem] text-[15px]">
+          <div onClick={() => window.open('')} className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:bg-zinc-900 duration-[600ms]">
+            <li className="p-2 ">COMO COMPRAR</li>
           </div>
           <div onClick={() => window.open('')} className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:bg-zinc-900 duration-[600ms]">
-            <BsJournalBookmark size={25} />
-            <li className="p-2 cursor-pointer">Manifesto</li>
+            <li className="p-2 cursor-pointer">ADQUIERE TU COLECCIONABLE</li>
           </div>
-          <div onClick={() => window.open('https://www.instagram.com/debook.app')} className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:bg-zinc-900 duration-[600ms]">
-            <SlSocialInstagram size={25} />
-            <li className="p-2 cursor-pointer">Instagram</li>
-          </div>
-          <div onClick={() => window.open('https://www.twitter.com/debook.app')} className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:bg-zinc-900 duration-[600ms] ">
-            <SlSocialTwitter size={25} />
-            <li className="p-2 cursor-pointer">Twitter</li>
-          </div>
-          <button onClick={() => window.open('')} className="uppercase text-black magickey-6 text-[15px] border-black border-2 rounded-[6px] px-4 py-1 hover:bg-black hover:border-white font-bold duration-300">Buy Magickey</button>
         </ul>
-        <div className="cursor-pointer z-20 flex nm:hidden " onClick={handleNav} onKeyPress={handleNav}>
+        <div className="cursor-pointer z-20 flex md:hidden" onClick={handleNav} onKeyPress={handleNav}>
           {!nav ? <AiOutlineClose size={20} className="text-black" /> : <AiOutlineMenu size={20} className="text-white" />}
         </div>
-        <div className={!nav ? 'fixed bg-white left-0 top-0 w-full z-10 h-full bg-beyond-1 ease-in-out duration-500' : 'fixed left-[-100%]'}>
+        <div className={!nav ? 'fixed md:hidden bg-white left-0 top-0 w-full z-10 h-full bg-beyond-1 ease-in-out duration-500' : 'fixed left-[-200%]'}>
           <div className="mt-10 px-6">
             <Image src={images.logo} width={200} height={100} />
           </div>
-          <ul className="pt-16 px-10 uppercase font-nesatho font-bold">
-            <li onClick={() => window.open('/FAQ', '_self')} className="p-4 text-[50px]">APP</li>
-            <li onClick={() => window.open('')} className="p-4 text-[50px]">MANIFESTO</li>
-            <li onClick={() => window.open('https://www.instagram.com/debook.app')} className="p-4 text-[50px]">Instagram</li>
-            <button onClick={() => window.open('https://forms.gle/GUQeAoUAQ7qA2ybQ7')} className="uppercase text-[12px] nm:text-[30px] border-black border-2 rounded-[6px] ml-2 mt-4 px-4 py-1 hover:bg-black hover:text-white hover:border-white">BUY MAGICKEY</button>
+          <ul className="pt-16 px-10 flex flex-col md:hidden uppercase font-nesatho font-bold">
+            <li onClick={() => window.open('')} className="p-4 text-[30px]">COMO COMPRAR</li>
+            <li onClick={() => window.open('')} className="p-4 text-[18px]">ADQUIERE TU COLECCIONABLE</li>
           </ul>
         </div>
       </div>

@@ -129,6 +129,10 @@ background-clip: text;
     object-fit: contain;
 }
 
+.header-1 {
+    background-image: url("/public/assets/headerbg.png");
+}
+
 .magickey-6 {
     background: linear-gradient(94.08deg, #F1F1F1 0%, #E8BA98 106.59%);
 opacity: 0.6;
@@ -137,7 +141,6 @@ border-radius: 7px;
 
 .text-image {
     top: 30%;
-    
 }
 
 .orange-1 {
