@@ -23,7 +23,7 @@ function Navbar() {
         </div>
         <ul className="hidden text-white font-bold font-nesatho md:flex nm:mr-10 space-x-[4rem] text-[15px]">
           <div onClick={() => window.open('')} className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:bg-zinc-900 duration-[600ms]">
-            <li className="p-2 ">COMO COMPRAR</li>
+            <li className="p-2 ">LIBRO BLANCO</li>
           </div>
           <div onClick={() => window.open('')} className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:bg-zinc-900 duration-[600ms]">
             <li className="p-2 cursor-pointer">ADQUIERE TU COLECCIONABLE</li>
@@ -37,7 +37,7 @@ function Navbar() {
             <Image src={images.logo} width={200} height={100} />
           </div>
           <ul className="pt-16 px-10 flex flex-col md:hidden uppercase font-nesatho font-bold">
-            <li onClick={() => window.open('')} className="p-4 text-[30px]">COMO COMPRAR</li>
+            <li onClick={() => window.open('')} className="p-4 text-[30px]">LIBRO BLANCO</li>
             <li onClick={() => window.open('')} className="p-4 text-[18px]">ADQUIERE TU COLECCIONABLE</li>
           </ul>
         </div>

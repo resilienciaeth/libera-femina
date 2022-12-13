@@ -5,9 +5,9 @@ import images from '../public/assets';
 
 function Header() {
   return (
-    <div className="nm:bg-header-2 nm:bg-contain md:bg-no-repeat flex justify-center items-start h-[90vh] nm:h-[110vh]">
+    <div className="nm:bg-header-2 nm:bg-contain md:bg-no-repeat flex justify-center items-start h-[100vh] nm:h-[110vh]">
       <div className="flex flex-col  mt-20 justify-center items-center">
-        <p className=" font-kanit font-bold text-[15px] text-libera-2">KA' LARRAZA & MALICIA</p>
+        <p className=" font-kanit font-bold text-[15px] text-libera-2">KA' LARRAZA & DOC MALICIA</p>
         <h1 className="text-center text-[58px] nm:text-[75px] font-bold leading-[50px] font-nesatho nm:leading-[120px] text-white">
           LIBERA
           <br className="flex nm:hidden" />

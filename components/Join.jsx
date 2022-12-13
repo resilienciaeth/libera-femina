@@ -17,12 +17,12 @@ function Join() {
               Y CUMPLIR TUS SUEÑOS.
             </h1>
             <p className="text-[#ECECEC] opacity-40 text-[12px] nm:text-[20px] text-center px-4 mt-6">
-              Adquiere tu NFT para ser parte de esta comunidad haz click si ya cuentas con el tuyo.
+              Adquiere tu coleccionable para ser parte de esta comunidad o haz click en "unirse" si ya cuentas con el tuyo.
             </p>
             <div className="mt-10 space-x-4">
-              <button className="bg-[#8800FF] font-nesatho text-[14px] nm:text-[26px] text-white px-6 py-1 rounded-2xl">UNIRSE</button>
-              <button className="border-[#9A2AFC] border-2 font-nesatho text-[14px] nm:text-[26px] text-white px-4 py-1 rounded-2xl">
-                LIBERATE
+              <button className="bg-[#8800FF] font-nesatho text-[14px] nm:text-[26px] text-white px-6 py-1 rounded-2xl">ADQUIRIR</button>
+              <button className="border-[#9A2AFC] border-2 font-nesatho text-[14px] nm:text-[26px] text-white px-4 py-1 rounded-2xl" onClick={() => window.open('https://discord.gg/N6272q7rHu')}>
+                UNIRSE
               </button>
             </div>
           </div>
