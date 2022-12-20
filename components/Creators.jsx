@@ -36,8 +36,7 @@ function Creators() {
               </div>
               <div className="flex flex-row justify-center mt-6">
                 <div className="flex flex-row space-x-4">
-                  <SlSocialInstagram className="text-white" size={20} onClick={() => window.open('https://www.instagram.com/')} />
-                  <SlSocialTwitter className="text-white" size={20} onClick={() => window.open('https://twitter.com/')} />
+                  <SlSocialInstagram className="text-white" size={20} onClick={() => window.open(' https://www.instagram.com/kalarraza')} />
                 </div>
               </div>
             </div>
@@ -57,8 +56,7 @@ function Creators() {
               </div>
               <div className="flex flex-row justify-center mt-6">
                 <div className="flex flex-row space-x-4">
-                  <SlSocialInstagram className="text-white" size={20} onClick={() => window.open('https://www.instagram.com/')} />
-                  <SlSocialTwitter className="text-white" size={20} onClick={() => window.open('https://twitter.com/')} />
+                  <SlSocialInstagram className="text-white" size={20} onClick={() => window.open('https://www.instagram.com/_docmalicia')} />
                 </div>
               </div>
             </div>

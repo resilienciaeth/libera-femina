@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import images from '../public/assets';
+import Carouselmb from './Carouselmb';
 
 function Utilities() {
   return (
@@ -20,29 +21,7 @@ function Utilities() {
             <BsArrowLeft className="text-[#EEEEF2] opacity-40" size={50} />
             <BsArrowRight className="text-[#940FF7]" size={50} />
           </div>
-          <div className="bg-[#4B365D] px-6 rounded-lg mt-6 h-[60vh] nm:h-[50vh]">
-            <div className="flex py-10 flex-col space-y-4 ">
-              <h1 className="text-white text-[18px] font-nesatho text-center font-bold">
-                01. CURSOS CREATIVOS PARA
-                {' '}
-                <br />
-                <span className="text-libera-2">DESPERTAR TU ARTE</span>
-              </h1>
-              <p className="text-[10px] md:text-[14px]  px-2 md:px-10 text-center text-white ">Este será un ámbito de aprendizaje, KA’ LARRAZA y Malicia ofrecerán cursos de arte visual y auditiva. Los talleres de creatividad explotaran tu alma artística, podrás aprender todo lo siguiente:</p>
-              <ul className="flex flex-col items-start ml-3 text-left font-kanit text-white">
-                <li>
-                  1. Dibujo Básico
-                </li>
-                <li>2. Dibuja en Procreate</li>
-                <li>3. Ilustración Consciente</li>
-                <li>4. Mezcla música</li>
-                <li>5. Dibujo para Tatuaje</li>
-                <li>6. ¿Cómo empezar a tatuar?</li>
-                <li>7. Estilos tatuaje</li>
-                <li>8. Teoría musical para producción</li>
-              </ul>
-            </div>
-          </div>
+          <Carouselmb />
         </div>
       </div>
       <div className="hidden nm:flex h-[110vh] nm:flex-row items-center justify-center">
