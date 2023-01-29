@@ -1,11 +1,51 @@
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
+import useEmblaCarousel from 'embla-carousel-react';
 
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import images from '../public/assets';
 import Carouselmb from './Carouselmb';
+import Carouseldk from './Carouseldk';
+import { NextButton, PrevButton } from './EmblaCarouselDotsButtons';
 
-function Utilities() {
+const OPTIONS = {};
+const SLIDE_COUNT = 3;
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+
+function Utilities(props) {
+  const { slides, options } = props;
+  const [emblaRef, emblaApi] = useEmblaCarousel(options);
+  const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
+  const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [scrollSnaps, setScrollSnaps] = useState([]);
+
+  const scrollPrev = useCallback(
+    () => emblaApi && emblaApi.scrollPrev(),
+    [emblaApi],
+  );
+  const scrollNext = useCallback(
+    () => emblaApi && emblaApi.scrollNext(),
+    [emblaApi],
+  );
+  const scrollTo = useCallback(
+    (index) => emblaApi && emblaApi.scrollTo(index),
+    [emblaApi],
+  );
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+    setPrevBtnEnabled(emblaApi.canScrollPrev());
+    setNextBtnEnabled(emblaApi.canScrollNext());
+  }, [emblaApi, setSelectedIndex]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    setScrollSnaps(emblaApi.scrollSnapList());
+    emblaApi.on('select', onSelect);
+    emblaApi.on('reInit', onSelect);
+  }, [emblaApi, setScrollSnaps, onSelect]);
   return (
     <div className="mt-20 ">
       <div className="nm:hidden">
@@ -17,59 +57,18 @@ function Utilities() {
               <span className="text-libera-2">BENEFICIOS</span>
             </h1>
           </div>
-          <div className="flex flex-row items-center justify-center space-x-6">
-            <BsArrowLeft className="text-[#EEEEF2] opacity-40" size={50} />
-            <BsArrowRight className="text-[#940FF7]" size={50} />
-          </div>
-          <Carouselmb />
+          <Carouselmb slides={SLIDES} options={OPTIONS} />
         </div>
       </div>
       <div className="hidden nm:flex h-[110vh] nm:flex-row items-center justify-center">
-        <div className="w-[35%]">
+        <div className="w-[40%]">
           <div className="ml-[2rem]">
             <Image src={images.art1} />
           </div>
         </div>
-        <div className="w-[65%] px-10 flex items-center justify-center">
-          <div className="ml-[2rem]">
-            <h1 className="text-white text-[70px] font-nesatho">
-              LOS
-              {' '}
-              <span className="text-libera-2">BENEFICIOS:</span>
-            </h1>
-            <div className="bg-[#4B365D] rounded-3xl max-w-[800px]">
-              <div className="px-10 py-10">
-                <div>
-                  <h1 className="text-[30px] text-white font-nesatho">
-                    01. CURSOS CREATIVOS PARA
-                    {' '}
-                    <br />
-                    {' '}
-                    <span className="text-libera-2">DESPERTAR TU ARTE</span>
-                  </h1>
-                </div>
-                <p className="text-[17px] font-kanit text-white mt-6">Este será un ámbito de aprendizaje, KA’ LARRAZA y Malicia ofrecerán cursos de arte visual y auditiva. Los talleres de creatividad explotaran tu alma artística, podrás aprender todo lo siguiente:</p>
-                <div className="flex flex-row font-kanit space-x-16 text-white text-[24px] mt-10">
-                  <ul className="space-y-4">
-                    <li>1. Dibujo Básico</li>
-                    <li>3. Ilustración Consciente</li>
-                    <li>5. Dibujo para Tatuaje</li>
-                    <li>7. Estilos tatuaje</li>
-                  </ul>
-                  <ul className="space-y-4">
-                    <li>2. Dibuja en Procreate</li>
-                    <li>4. Mezcla música</li>
-                    <li>6. ¿Cómo empezar a tatuar?</li>
-                    <li>8. Teoría musical para producción</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-row items-center justify-center mt-20 space-x-6">
-              <BsArrowLeft className="text-[#EEEEF2] opacity-40" size={50} />
-              <BsArrowRight className="text-[#940FF7]" size={50} />
-            </div>
-          </div>
+
+        <div className="w-[60%] px-10 flex items-center justify-center">
+          <Carouseldk slides={SLIDES} options={OPTIONS} />
         </div>
       </div>
     </div>
