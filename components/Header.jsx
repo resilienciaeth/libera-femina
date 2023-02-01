@@ -23,14 +23,14 @@ function Header() {
         </p1>
         <button className="mt-4 bg-[#9A2AFC] text-white rounded-2xl font-kanit uppercase font-bold px-6 py-2 text-[10px] nm:text-[20px]">conocer más</button>
       </div>
-      <div className="absolute nm:hidden mt-[22rem] mr-[20rem] md:mr-[40rem] ">
-        <Image src={images.libera1} width={88} height={111} className="absolute mt-[12rem]" />
+      <div className="absolute flex nm:hidden mt-[20rem] mr-[20rem] md:mr-[40rem] ">
+        <Image src={images.libera1} width={88} height={111} className=" mt-[12rem]" />
       </div>
-      <div className="absolute nm:hidden mt-[26rem] ">
-        <Image src={images.libera2} width={209} height={281} className="absolute mt-[12rem]" />
+      <div className="absolute flex nm:hidden mt-[18rem] ">
+        <Image src={images.libera2} width={209} height={281} className=" mt-[7rem]" />
       </div>
-      <div className="absolute nm:hidden mt-[22rem] ml-[20rem] md:ml-[40rem] overflow-visible ">
-        <Image src={images.libera3} width={91} height={126} className="absolute mt-[12rem]" />
+      <div className="absolute flex nm:hidden mt-[22rem] ml-[20rem] md:ml-[40rem] overflow-visible ">
+        <Image src={images.libera3} width={91} height={126} className=" mt-[12rem]" />
       </div>
     </div>
   );
