@@ -28,7 +28,7 @@ function Navbar() {
             <li className="p-2 ">INSTAGRAM</li>
           </div>
 
-          <div onClick={() => window.open('')} className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:text-gray-500 duration-[600ms]">
+          <div onClick={() => window.open('/liberate')} className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:text-gray-500 duration-[600ms]">
             <li className="p-2 cursor-pointer">OBTENER COLECCIONABLE</li>
           </div>
         </ul>
@@ -42,7 +42,7 @@ function Navbar() {
           <ul className="pt-16 px-10 flex flex-col md:hidden uppercase font-nesatho font-bold">
             <li onClick={() => window.open('https://nakedmeta.notion.site/LIBERA-F-MINA-cc2926e6cdbe473c9ae5945c3240af43')} className="p-4 text-[18px]">FAQ</li>
             <li onClick={() => window.open('https://www.instagram.com/libera_femina')} className="p-4 text-[18px]">INSTAGRAM</li>
-            <li onClick={() => window.open('')} className="p-4 text-[18px]">OBTENER COLECCIONABLE</li>
+            <li onClick={() => window.open('/liberate')} className="p-4 text-[18px]">OBTENER COLECCIONABLE</li>
           </ul>
         </div>
       </div>
